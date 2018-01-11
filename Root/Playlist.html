@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Led Zeppelin - PLaylist</title>
+<link href="CSS/playlist.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+
+<!-- Main Container -->
+<div class="container"> 
+  <header>
+    <div class="primary_header">
+      <img class="logo" src="Assets/Ledlogo.png" alt="Led Zeppelin logo">
+    </div>
+    <nav class="secondary_header" id="menu">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+		<li><a href="Albums.html">Albums</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="photos.html">Pictures</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+		<li><a href="demo.html">Demo</a></li>
+        <li></li>
+      </ul>
+    </nav>
+
+  </header> 
+
+
+<div class="btn-group">
+  
+  <button onclick="LedZep1()">Led Zeppelin</button>
+  <button onclick="LedZep2()">Led Zeppelin II</button>
+  <button onclick="LedZep3()">Led Zeppelin III</button>
+  <button onclick="LedZep4()">Led Zeppelin IV</button> 
+  <button onclick="LedZep5()">Houses Of The Holy</button>
+  <button onclick="LedZep6()">Physical Graffiti</button>
+  <button onclick="LedZep7()">Presence</button>
+  <button onclick="LedZep8()">In Through The Out Door</button>
+  <button onclick="LedZep9()">CODA</button>
+</div>
+<div class ="albumlist">
+<ul>
+	<div id="item1" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">Good Times Bad Times</div>
+	<div id="item2" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">Babe I'm Gonna Leave You</div>
+	<div id="item3" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">You Shook Me</div>
+	<div id="item4" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">Dazed and Confused</div>
+	<div id="item5" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">Your Time Is Gonna Come</div>
+	<div id="item6" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">Black Mountain Side</div>
+	<div id="item7" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">Communication Breakdown</div>
+	<div id="item8" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">I Can't Quit You Babe</div>
+	<div id="item9" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">How Many More Times</div>
+	<div id="item10" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"></div>
+	
+	
+</ul>
+</div>
+<h2 id="app_status">App status...</h2>
+<div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
+<ul id="play">
+	<h3>Playlist</h3>
+	<li id="song1"></li>
+	<h4>was added to the playlist</h4>
+</ul>
+
+</div>
+<script src="JS/playlist.js"></script>
+</body>
+
+</html>
